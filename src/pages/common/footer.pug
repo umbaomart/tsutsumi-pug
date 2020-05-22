@@ -1,0 +1,20 @@
+footer.footerContainer
+// script
+//- SCRIPT CONFIGURATION [SET DIRECTORY ONLY]
+block footerpathing
+	if isJQuery
+		script(src=`${path}/assets/js/libs/jquery-3.4.1.min.js`)
+	if isSwiper
+		script(src=`${path}/assets/js/libs/swiper.min.js`)
+	if isAOE
+		script(src=`${path}/assets/js/libs/aos.js`)
+	if isSlick
+		script(src=`${path}/assets/js/libs/slick.min.js`)
+	//- if isSlideBar
+	//- 	script(src=path+"/assets/js/libs/slidebars.js")
+	if fontA
+		script(src="https://kit.fontawesome.com/701b19f690.js" crossorigin="anonymous")
+//- END OF SCRIPT CONFIGURATION
+script(src=`${path}/assets/js/libs/smoothscroll.min.js`)
+script(src=`${path}/assets/js/main.js`)
+// / script

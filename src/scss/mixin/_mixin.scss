@@ -1,0 +1,83 @@
+@mixin renderText {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+@mixin mRes {
+    @include media($maxMobileSize) {
+        width: 100%;
+        @content;
+    }
+}
+
+@mixin sRes {
+    @include mediaRange($minMobileSupportSize, $maxMobileSupportSize) {
+        width: 100%;
+        @content;
+    }
+}
+
+@mixin clearfix() {
+    &::before,
+    &::after {
+        content: "";
+        background-image: none;
+        display: table;
+    }
+    &::after {
+        clear: both;
+    }
+}
+
+@mixin dFontTheme($type: null) {
+    @if $type != null {
+        // font:
+    }
+}
+
+@mixin media($breakPoint) {
+    @media screen and (max-width: $breakPoint) {
+        @content;
+    }
+}
+
+@mixin mediaMin($breakPoint) {
+    @media screen and (min-width: $breakPoint) {
+        @content;
+    }
+}
+
+@mixin mediaRange($breakPointStart, $breakPointUntil) {
+    @media screen and (min-width: $breakPointStart) and (max-width: $breakPointUntil) {
+        @content;
+    }
+}
+
+// - MART ADDED
+@mixin hoverOpacity($o) {
+    cursor: pointer;
+    &:hover {
+        opacity: $o;
+    }
+}
+
+@mixin transition {
+    transition: all 0.3s ease-in;
+}
+
+@mixin dFlex($ai, $sb) {
+    display: flex;
+    align-items: $ai;
+    justify-content: $sb;
+}
+
+@mixin linkHoverWithArrow($bg, $c) {
+    background: $white;
+    border: 2px solid $c;
+    color: $c;
+    &:after {
+      content: '';
+      border-color: $c;
+    }
+  }
+  

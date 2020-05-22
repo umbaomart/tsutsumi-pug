@@ -1,0 +1,25 @@
+/* ---------------------------------------
+main.scss - MAIN
+----------------------------------------*/
+@import "mixin/mixin";
+
+@import "base/reset";
+@import "base/variables";
+@import "base/initial";
+
+@import "base/common";
+
+/* -------------------------
+変数 - COMPONENTS
+----------------------------*/
+@import "component/header";
+@import "component/title";
+@import "component/footer";
+@import "component/aside";
+@import "component/button";
+@import "component/slider";
+
+/* ----------------
+PAGES 
+------------------*/
+@import "pages/top";

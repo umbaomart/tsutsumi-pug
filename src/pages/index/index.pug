@@ -1,0 +1,32 @@
+//- BASE PATH SETTING OF FILE 
+-var path = '.';
+//- CONFIGURATION 
+-var commonConfiguration = true;
+//- CHANGE ONLY THE ABOVE SETTING 
+//- =====================================
+-var specificConfiguration = true;
+//- =====================================
+if commonConfiguration
+	include ../common/config.pug
+else if specificConfiguration
+	include inc/config.pug
+//- END OF CONFIGURATION
+doctype html
+html(class="no-js" lang="ja")
+	// head
+	include inc/meta.pug
+	include ../common/head.pug
+	// / head
+	body(id="pagetop")
+		//- For SEO google tag manager/analytics
+		|
+		// header
+		include ../common/header.pug
+		// / header
+		// main
+		main
+			
+		// footer
+		include ../common/footer.pug
+		// / footer
+		// / main

@@ -1,0 +1,75 @@
+/* ---------------------------------------------------------
+初期設定 - INITIAL SETTING
+----------------------------------------------------------*/
+html {
+    color: $black;
+    background-color: $white;
+}
+
+html,
+body {
+    height: 100%;
+    position: relative;
+    font-family: $fontFamily;
+    @include renderText;
+}
+
+main {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: $black;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.clearfix {
+    @include clearfix;
+}
+
+/*-----------------------------
+    BASE SP
+-------------------------------*/
+
+@include media($maxMobileSize) {
+    html {
+        min-width: $minMobileSize;
+    }
+
+    .pc {
+        display: none;
+    }
+
+    .sp {
+        display: block;
+    }
+}
+
+/*------------------------------
+    BASE PC
+-------------------------------*/
+@media screen and (min-width: $minPCSize) {
+    html {
+        width: 100%;
+        min-width: $minPCContentSize;
+
+        .pc {
+            display: block;
+        }
+
+        .sp {
+            display: none;
+        }
+    }
+}

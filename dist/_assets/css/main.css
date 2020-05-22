@@ -1,0 +1,217 @@
+@charset "UTF-8";
+/* ---------------------------------------
+main.scss - MAIN
+----------------------------------------*/
+/* ---------------------------------------------------------
+スタイルリセット - CSS RESET
+----------------------------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-style: normal;
+  font-weight: normal;
+}
+
+h1, h2, h3, h4, h5, h6, td, th, p, ul, li, dt, dd {
+  font-size: 1em;
+}
+
+ul li {
+  list-style: none;
+}
+
+article, main, header, footer, aside, figure, figcaption, nav, section {
+  display: block;
+}
+
+a:focus, button:focus {
+  outline: 0;
+}
+
+button {
+  background: none;
+  border: 0;
+}
+
+div {
+  font-size: 15px;
+}
+
+body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+/* ---------------------------------------------------------
+初期設定 - INITIAL SETTING
+----------------------------------------------------------*/
+html {
+  color: #000;
+  background-color: #fff;
+}
+
+html,
+body {
+  height: 100%;
+  position: relative;
+  font-family: "Times New Roman", "游明朝", YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.clearfix::before, .clearfix::after {
+  content: '';
+  background-image: none;
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/*-----------------------------
+    BASE SP
+-------------------------------*/
+@media screen and (max-width: 767px) {
+  html {
+    min-width: 320px;
+  }
+  .pc {
+    display: none;
+  }
+  .sp {
+    display: block;
+  }
+}
+
+/*------------------------------
+    BASE PC
+-------------------------------*/
+@media screen and (min-width: 768px) {
+  html {
+    width: 100%;
+    min-width: 100%;
+  }
+  html .pc {
+    display: block;
+  }
+  html .sp {
+    display: none;
+  }
+}
+
+/*--------------------------------------
+_common.scss
+---------------------------------------*/
+/* --------------------------
+GENERAL PURPOSE
+---------------------------*/
+/* --------------
+MARGINS
+---------------*/
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+/* --------------
+TEXT ALIGNMENTS
+---------------*/
+.txt-c {
+  text-align: center;
+}
+
+.txt-l {
+  text-align: left;
+}
+
+.txt-r {
+  text-align: right;
+}
+
+.txt-j {
+  text-align: justify;
+}
+
+/* -------------------------
+変数 - COMPONENTS
+----------------------------*/
+/* --------------
+HEADER
+---------------*/
+/* --------------
+FOOTER
+---------------*/
+/* ------------
+ASIDE CONTAINER
+--------------*/
+/* ------------
+BUTTONS
+--------------*/
+.button {
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+
+.button:hover {
+  opacity: 0.6;
+}
+
+/* --------------
+KV GALLERY
+---------------*/
+/* ----------------
+PAGES 
+------------------*/
+/**************************************
+_top.scss
+***************************************/
+/*# sourceMappingURL=main.css.map */

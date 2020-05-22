@@ -1,0 +1,16 @@
+**Project [NAME]
+Upcoming Tasks:
+
+General Tasks:
+ ☐ Initial tasks
+
+Build Procedure Checklist:
+  ☐ Assets folder
+  ☐ HTML Files/Folders
+
+ Excluded files:
+ ☐ Pug files
+ ☐ gulpfile.js
+ ☐ tasks.todo
+ ☐ prepos-6.config
+ ☐ .htaccess files
